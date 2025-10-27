@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DriveEasy Car Rental</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader">
+            <img src="img/loader-car.gif" alt="Loading..." class="loader-gif">
+            <p class="loader-text">Loading Fun Drive...</p>
+        </div>
+    </div>
+
+    <!-- Marquee Top Banner -->
+    <div class="top-marquee text-white py-1">
+        <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+            Bookings require at least 2 days' prior | Deposit is compulsory
+        </marquee>
+    </div>
+
+    <!-- Sticky Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/fun-drive-logo.png" alt="Fun Drive Logo" style="width: 90px;">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <a href="tel:+919764976913" class="btn btn-call dg-btn">
+                    <span>
+                        <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                        Call Now
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Section with Background -->
+    <section class="breadcrumb-section" id="start">
+        <div class="breadcrumb-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-content text-center">
+                        <h1 class="breadcrumb-title">About Fun Drive</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="company-info-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="company-image">
+                        <img src="img/car-about-image.jpg" alt="Our Company" class="img-fluid shadow">
+                        <span class="company-badge dg-btn"><span>Since 2014</span></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="company-content">
+                        <h2 class="section-title">Your Trusted Car Rental Partner</h2>
+                        <p class="lead">For over a decade, Fun Drive has been at the forefront of the car rental industry, providing exceptional service and maintaining the highest standards of vehicle quality and customer satisfaction.</p>
+                        
+                        <p class="lead">Our commitment to excellence has made us the preferred choice for thousands of customers across the nation. From luxury sedans to economy cars, we offer a diverse fleet to meet every need and budget.</p>
+                        
+                        <div class="company-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Premium vehicle maintenance standards</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 customer support and roadside assistance</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Flexible rental terms and competitive pricing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="company-cta">
+                            <a href="contact.html" class="btn btn-warning me-3 dg-btn"><span>Get In Touch</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Why Choose Fun Drive?</h2>
+                    <p class="section-subtitle">Discover what sets us apart from the competition</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Comprehensive Insurance</h4>
+                        <p>All our vehicles come with full insurance coverage, giving you complete peace of mind during your rental period.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Regular Maintenance</h4>
+                        <p>Our fleet undergoes rigorous maintenance checks to ensure safety, reliability, and optimal performance.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock customer service and roadside assistance to help you whenever you need it.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Competitive Pricing</h4>
+                        <p>Transparent pricing with no hidden fees. We offer the best rates in the market with flexible payment options.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Multiple Locations</h4>
+                        <p>With multiple convenient pickup and drop-off points across North Goa, we're always just around the corner.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="value-card text-center">
+                        <div class="value-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Easy Booking</h4>
+                        <p>User-friendly online booking system for quick and hassle-free reservations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="about-counter-section py-5">
+        <div class="counter-section">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="counter-number" data-target="80">0</h3>
+                        <p class="counter-label">Cars Available</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="counter-number" data-target="1200">0</h3>
+                        <p class="counter-label">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="counter-number" data-target="20">0</h3>
+                        <p class="counter-label">Locations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-item">
+                        <div class="counter-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="counter-number" data-target="3">0</h3>
+                        <p class="counter-label">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Carousel Section -->
+    <section class="reviews-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">What Our Customers Say</h2>
+                    <p class="section-subtitle">Read recent reviews from our satisfied customers</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="review-card">
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="review-text">"Exceptional service! The BMW 3 Series was in perfect condition and the booking process was seamless. Will definitely use Fun Drive again."</p>
+                                            <div class="review-author">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="John Smith" class="author-avatar">
+                                                <div class="author-info">
+                                                    <h5>John Smith</h5>
+                                                    <span>Business Executive</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="review-card">
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="review-text">"Great experience from start to finish. The staff was professional and the car was exactly as described. Highly recommended!"</p>
+                                            <div class="review-author">
+                                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson" class="author-avatar">
+                                                <div class="author-info">
+                                                    <h5>Sarah Johnson</h5>
+                                                    <span>Marketing Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="review-card">
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="review-text">"Amazing customer service and quality vehicles. The 24/7 support really saved the day when I had a minor issue during my trip."</p>
+                                            <div class="review-author">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mike Davis" class="author-avatar">
+                                                <div class="author-info">
+                                                    <h5>Mike Davis</h5>
+                                                    <span>Entrepreneur</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 mb-4">
+                                        <div class="review-card">
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <p class="review-text">"Competitive pricing and excellent vehicle selection. The online booking system made everything so convenient. Will book again!"</p>
+                                            <div class="review-author">
+                                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Emma Wilson" class="author-avatar">
+                                                <div class="author-info">
+                                                    <h5>Emma Wilson</h5>
+                                                    <span>Teacher</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as main page) -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="img/fun-drive-logo.png" alt="Fun Drive Logo" style="width: 90px; margin-bottom: 5px;">
+                        <p>Your trusted partner for premium car rental services. Experience comfort, reliability, and excellence with every ride.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Economy Cars</a></li>
+                        <li><a href="#">Luxury Cars</a></li>
+                        <li><a href="#">SUVs</a></li>
+                        <li><a href="#">Long-term Rental</a></li>
+                    </ul>
+                </div> -->
+                
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +91 9764976913</p>
+                        <p><i class="fas fa-envelope"></i> info@driveeasy.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Prabhu Chambers, Mapusa, Goa - 403507</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        &copy; 2025 Fun Drive. All rights reserved. | 
+                        <a href="#">Privacy Policy</a> | 
+                        <a href="#">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#start" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
