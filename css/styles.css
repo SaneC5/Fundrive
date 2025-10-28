@@ -288,6 +288,12 @@ body{
     background-attachment: fixed;
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* iOS-specific override */
+    .hero-section, .cars-section, .taxi-cars-section, .yacht-section, .breadcrumb-section{
+        background-attachment: scroll !important;
+    }
+}
 
 .car-card {
     background: rgba(0, 0, 0, 0.1);
@@ -1166,13 +1172,13 @@ html {
 }
 
 .blog-title a {
-    color: inherit;
+    color: var(--secondary-blue);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .blog-title a:hover {
-    color: var(--secondary-blue);
+    color: var(--primary-blue);
 }
 
 .blog-excerpt {
@@ -1180,14 +1186,39 @@ html {
     line-height: 1.6;
     margin-bottom: 20px;
     flex: 1;
+    text-align: justify;
 }
+
+.blog-read-more {
+    align-self: flex-start;
+    color: var(--secondary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-read-more:hover {
+    color: var(--secondary-blue);
+    transform: translateX(5px);
+}
+
+.blog-read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.blog-read-more:hover i {
+    transform: translateX(5px);
+}
+
 
 .blog-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #00005544;
     margin-top: auto;
 }
 
@@ -1204,7 +1235,7 @@ html {
 
 .blog-tags {
     font-size: 0.8rem;
-    color: #999;
+    color: var(--secondary-blue);
 }
 
 .blog-tags i {
