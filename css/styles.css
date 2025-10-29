@@ -114,7 +114,7 @@ body{
 }
 
 .btn-call {
-    background: #0000dd;
+    background: #2a46ff;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -124,7 +124,7 @@ body{
 }
 
 .btn-call:hover {
-    background: #0000dd;
+    background: #2a46ff;
     transform: skewX(-25deg) translateY(-3px);
     color: white;
 }
@@ -302,7 +302,7 @@ body{
 }
 
 .car-card {
-    background: rgba(0, 0, 0, 0.1);
+    background: white;
     backdrop-filter: blur(10px);
     border: 2px solid var(--primary-yellow);
     border-radius: 7px;
@@ -342,11 +342,11 @@ body{
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #ffffff;
+    color:#000000;
 }
 .car-description{
     font-size: 1rem;
-    color: white;
+    color: #000000;
 }
 
 .car-features {
@@ -361,7 +361,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 4px;
-    color: white;
+    color: #000000;
     font-size: 1rem;
     margin: 2px;
 }
@@ -372,7 +372,7 @@ body{
 .car-price {
     font-size: 1.4rem;
     font-weight: 700;
-    color: white;
+    color: #000000;
     margin: 15px 0;
 }
 
@@ -384,14 +384,16 @@ body{
 }
 
 .btn-book{
-    color: var(--secondary-yellow);
-    background: #0000dd;
+    color: white;
+    font-weight: 600;
+    background: #2a46ff;
 }
 
 .btn-book2{
     margin-top: 10px;
     background: var(--secondary-yellow);
     color: var(--primary-blue);
+    font-weight: 600;
 }
 
 .btn-book:hover, .btn-book2:hover {
@@ -408,8 +410,8 @@ body{
 }
 
 .btn-book:hover {
-    color: var(--secondary-yellow);
-    background: var(--secondary-blue);
+    color: white;
+    background: #2a46ff;
 }
 
 .btn-book2:hover {
