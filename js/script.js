@@ -15,7 +15,7 @@ const selfCars = [
     },
     {
         name: "Swift",
-        image: "img/swift2.jpg",
+        image: "img/swift2.png",
         description: "Experience effortless driving with the Swift automatic — a sleek, efficient, and comfortable hatchback designed for smooth city travel.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -28,7 +28,7 @@ const selfCars = [
     },
     {
         name: "Baleno",
-        image: "img/baleno.jpg",
+        image: "img/baleno.png",
         description: "A premium hatchback offering refined performance, spacious interiors, and advanced features — perfect for family drives and long commutes.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -54,7 +54,7 @@ const selfCars = [
     },
     {
         name: "i20 (Old)",
-        image: "img/i20-1.jpg",
+        image: "img/i20-1.png",
         description: "A dependable and comfortable hatchback with great mileage and spacious interiors — perfect for everyday travel and city rides.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -80,7 +80,7 @@ const selfCars = [
     },
     {
         name: "i20 (New)",
-        image: "img/i20-3.jpg",
+        image: "img/i20-3.png",
         description: "The new-generation i20 delivers a perfect balance of premium style, technology, and fuel efficiency for modern urban drives.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -93,7 +93,7 @@ const selfCars = [
     },
     {
         name: "i20 (New)",
-        image: "img/i20-4.jpg",
+        image: "img/i20-4.png",
         description: "Drive in comfort and style with the i20 automatic — a feature-packed hatchback with advanced tech and premium interiors.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -106,7 +106,7 @@ const selfCars = [
     },
     {
         name: "i20 (New) With Sunroof",
-        image: "img/i20-sunroof.jpg",
+        image: "img/i20-sunroof.png",
         description: "Enjoy every drive under the open sky with the i20 Sunroof edition — sporty design, smart features, and exceptional comfort in one.",
         features: [
             { type: "body", value: "Hatchbqck" },
@@ -119,7 +119,7 @@ const selfCars = [
     },
     {
         name: "Ertiga",
-        image: "img/ertiga.jpg",
+        image: "img/ertiga.png",
         description: "A versatile 7-seater MPV that combines space, comfort, and efficiency — perfect for family trips and group travel.",
         features: [
             { type: "body", value: "SUV" },
@@ -132,7 +132,7 @@ const selfCars = [
     },
     {
         name: "Ertiga",
-        image: "img/ertiga2.jpg",
+        image: "img/ertiga2.png",
         description: "The automatic Ertiga offers effortless long drives with spacious seating, smooth performance, and superior ride comfort.",
         features: [
             { type: "body", value: "SUV" },
@@ -171,7 +171,7 @@ const selfCars = [
     },
     {
         name: "Kia Sonet",
-        image: "img/kia-sonet2.jpg",
+        image: "img/kia-sonet2.png",
         description: "The automatic Kia Sonet offers refined power, premium interiors, and advanced tech for a luxurious SUV experience.",
         features: [
             { type: "body", value: "Suv" },
@@ -184,7 +184,7 @@ const selfCars = [
     },
     {
         name: "Venue",
-        image: "img/venue-1.jpg",
+        image: "img/venue-1.png",
         description: "A stylish and compact SUV with a bold stance, efficient engine, and smart features for an enjoyable city or highway drive.",
         features: [
             { type: "body", value: "SUV" },
@@ -210,7 +210,7 @@ const selfCars = [
     },
     {
         name: "Creta",
-        image: "img/creta.jpg",
+        image: "img/creta.png",
         description: "A premium midsize SUV that delivers power, comfort, and luxury — designed for families and explorers alike.",
         features: [
             { type: "body", value: "SUV" },
@@ -236,7 +236,7 @@ const selfCars = [
     },
     {
         name: "Hycross",
-        image: "img/innova-hycross.jpg",
+        image: "img/innova-hycross.png",
         description: "A sophisticated 7-seater hybrid SUV that blends power and efficiency with Toyota’s legendary comfort and reliability.",
         features: [
             { type: "body", value: "SUV" },
@@ -249,7 +249,7 @@ const selfCars = [
     },
     {
         name: "Crysta",
-        image: "img/innova-crysta.jpg",
+        image: "img/innova-crysta.png",
         description: "A powerful 7-seater SUV offering premium interiors, robust diesel performance, and exceptional comfort for long journeys.",
         features: [
             { type: "body", value: "SUV" },
@@ -262,7 +262,7 @@ const selfCars = [
     },
     {
         name: "Crysta",
-        image: "img/innova-crysta2.jpg",
+        image: "img/innova-crysta2.png",
         description: "Enjoy luxury on every mile with the Innova Crysta automatic — refined diesel power and unmatched comfort for family travel.",
         features: [
             { type: "body", value: "SUV" },
@@ -275,7 +275,7 @@ const selfCars = [
     },
     {
         name: "Thar",
-        image: "img/thar1.jpg",
+        image: "img/thar1.png",
         description: "Built for adventure — the Thar manual is a rugged off-roader that offers iconic design, power, and off-road excellence.",
         features: [
             { type: "body", value: "SUV" },
