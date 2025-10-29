@@ -172,6 +172,7 @@ body{
     font-size: 1.2rem;
     margin-bottom: 3rem;
     opacity: 0.9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Counter Section */

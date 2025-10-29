@@ -2,7 +2,7 @@
 const selfCars = [
     {
         name: "Swift",
-        image: "img/swift.jpg",
+        image: "img/swift.png",
         description: "A compact and stylish hatchback known for its agility, fuel efficiency, and modern design — ideal for city drives and weekend getaways.",
         features: [
             { type: "body", value: "Hatchback" },
@@ -209,7 +209,7 @@ const selfCars = [
         price: "₹ 2800/day"
     },
     {
-        name: "Creata",
+        name: "Creta",
         image: "img/creta.jpg",
         description: "A premium midsize SUV that delivers power, comfort, and luxury — designed for families and explorers alike.",
         features: [
@@ -301,7 +301,7 @@ const selfCars = [
     },
     {
         name: "Thar Roxx",
-        image: "img/thar3.jpg",
+        image: "img/thar3.png",
         description: "The Thar Roxx takes adventure to new heights with premium interiors, superior off-road performance, and unmatched road presence.",
         features: [
             { type: "body", value: "SUV" },
@@ -317,7 +317,7 @@ const selfCars = [
 const taxiCars = [
     {
         name: "Dzire",
-        image: "img/dzire-taxi.jpg",
+        image: "img/dzire-taxi.png",
         description: "A reliable and fuel-efficient sedan offering ample comfort and luggage space — ideal for airport transfers and business trips.",
         features: [
             { type: "body", value: "Sedan" },
@@ -327,7 +327,7 @@ const taxiCars = [
     },
     {
         name: "Crysta",
-        image: "img/innova-taxi.jpg",
+        image: "img/innova-taxi.png",
         description: "A premium 7-seater taxi option providing luxury, space, and unmatched comfort for long-distance travel or corporate rides.",
         features: [
             { type: "body", value: "SUV" },
