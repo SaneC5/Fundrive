@@ -452,7 +452,7 @@ function loadCars() {
                             ${carFeaturesHTML}
                         </div>
                         <div class="car-price">${car.price}</div>
-                        <button class="btn btn-book dg-btn" onclick="bookCar('${car.name}')">
+                        <button class="btn btn-book dg-btn" onclick="callToBook()">
                             <span>
                                 <i class="fas fa-phone"></i> Call to Book
                             </span>
@@ -492,7 +492,7 @@ function loadTaxiCars() {
                         <div class="car-features">
                             ${carFeaturesHTML}
                         </div>
-                        <button class="btn btn-book dg-btn" onclick="bookCar('${car.name}')">
+                        <button class="btn btn-book dg-btn" onclick="callToBook()">
                             <span>
                                 <i class="fas fa-phone"></i> Call to Book
                             </span>
@@ -525,7 +525,7 @@ function loadYacht() {
                     <div class="car-info">
                         <h4 class="car-name">${car.name}</h4>
                         <p class="car-description">${car.description}</p>
-                        <button class="btn btn-book dg-btn" onclick="bookCar('${car.name}')">
+                        <button class="btn btn-book dg-btn" onclick="callToBook()">
                             <span>
                                 <i class="fas fa-phone"></i> Call to Book
                             </span>
@@ -541,6 +541,10 @@ function loadYacht() {
         `;
         yachtList.innerHTML += carCard;
     });
+}
+
+function callToBook() {
+  window.location.href = 'tel:+919764976913';
 }
 
 // Book Car Function
@@ -778,13 +782,13 @@ const blogPosts = [
         id: 1,
         title: "Dudhsagar Waterfall",
         image: "img/blog/dudhsagar-waterfall.webp",
-        category: "Adventure/Explore",
+        category: "South Goa",
         excerpt: "People say this scenic spot offers breathtaking views of a majestic waterfall, with opportunities for swimming in natural pools and trekking through lush greenery...",
         content: "People say this scenic spot offers breathtaking views of a majestic waterfall, with opportunities for swimming in natural pools and trekking through lush greenery. They highlight the adventurous jeep safari through the jungle, the refreshing experience of swimming in the cold water, and the chance to see monkeys and other wildlife",
         author: "Sarah Johnson",
         date: "2024-01-15",
         tags: "waterfall, nature, trekking, adventure",
-        filter: "adventure-explore"
+        filter: "south-goa"
     },
     {
         id: 2,
@@ -814,265 +818,265 @@ const blogPosts = [
         id: 4,
         title: "Fort Aguada",
         image: "img/blog/fort-aguada.webp",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "People say this fortress offers stunning panoramic views of the Arabian Sea and the surrounding landscape, and is a great spot for photography. They also highlight...",
         content: "People say this fortress offers stunning panoramic views of the Arabian Sea and the surrounding landscape, and is a great spot for photography. They also highlight the peaceful atmosphere, the well-preserved historical architecture, and the affordable entry fee",
         author: "John Smith",
         date: "2024-01-08",
         tags: "fort, history, sea view, photography",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 5,
         title: "Chapora Fort",
         image: "img/blog/chapora-fort.webp",
-        category: "Car Guides",
+        category: "North Goa",
         excerpt: "People say this fortress offers breathtaking panoramic views of the sea, Vagator Beach, and the surrounding landscape, especially during sunset. They also highlight...",
         content: "People say this fortress offers breathtaking panoramic views of the sea, Vagator Beach, and the surrounding landscape, especially during sunset. They also highlight the peaceful and relaxing vibes, and the cool breeze",
         author: "David Brown",
         date: "2024-01-05",
         tags: "fort, sunset, view point, heritage",
-        filter: "guides"
+        filter: "north-goa"
     },
     {
         id: 6,
         title: "Reis Magos Fort",
         image: "img/blog/Reis-Magos-Fort.webp",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "People say this historical fort offers stunning views of the Mandovi River and Arabian Sea, and features interesting exhibits about Goa's history. They also highlight...",
         content: "People say this historical fort offers stunning views of the Mandovi River and Arabian Sea, and features interesting exhibits about Goa's history. They also highlight the well-maintained architecture, the peaceful and less crowded atmosphere, and the reasonable entry fee",
         author: "Lisa Garcia",
         date: "2024-01-03",
         tags: "fort, history, museum, architecture",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 7,
         title: "Cabo de Rama Fort",
         image: "img/blog/cabo-rama-fort.webp",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "People say this fortress offers stunning panoramic views of the Arabian Sea and a serene pebble beach. They also highlight the peaceful and tranquil atmosphere...",
         content: "People say this fortress offers stunning panoramic views of the Arabian Sea and a serene pebble beach. They also highlight the peaceful and tranquil atmosphere, perfect for relaxation and photography, and the free entry",
         author: "Tech Team",
         date: "2024-01-01",
         tags: "fort, sea view, relaxation, photography",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 8,
         title: "Calangute Beach",
         image: "img/blog/Calangute-beach.webp",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "Calangute Beach Goa, Resorts, Nightlife, Shacks & Places in CalanguteCalangute Beach is a large and popular beach in North Goa, often called the 'Queen of Beaches,'...",
         content: "Calangute Beach Goa, Resorts, Nightlife, Shacks & Places in CalanguteCalangute Beach is a large and popular beach in North Goa, often called the 'Queen of Beaches,' known for its lively atmosphere, diverse crowds, and numerous water sports. It features many beach shacks and restaurants, and offers activities like parasailing, jet skiing, and fishing, with a bustling market area nearby. The beach is open 24 hours and is particularly busy during the Christmas/New Year and summer tourist seasons",
         author: "Travel Expert",
         date: "2023-12-28",
         tags: "beach, nightlife, water sports, market",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 9,
         title: "Baga Beach",
         image: "img/blog/Baga-Beach.jpeg",
-        category: "Car Guides",
+        category: "North Goa",
         excerpt: "Most Famous Beach of Goa, Baga Beach, Famous among  Tourists, One of the most Visited Beach of Goa. Known for its Beach Shacks,  Water Sports, and Night Life...",
         content: "Most Famous Beach of Goa, Baga Beach, Famous among  Tourists, One of the most Visited Beach of Goa. Known for its Beach Shacks,  Water Sports, and Night Life., 100 Days Challenge - Day 51 / ...Baga Beach is a popular and lively beach in North Goa, famous for its vibrant nightlife, water sports, and beachfront restaurants and shacks. It is a major tourist destination with a wide variety of activities, including water sports like parasailing and jet skiing, and a buzzing market that leads to the shore",
         author: "Car Expert",
         date: "2023-12-25",
         tags: "beach, nightlife, water sports, popular",
-        filter: "guides"
+        filter: "north-goa"
     },
     {
         id: 10,
         title: "Anjuna Beach",
         image: "img/blog/anjuna-beach.webp",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "Anjuna Beach is a popular destination in North Goa, known for its vibrant atmosphere, rocky and sandy shores, lively nightlife, and hippie culture. It is a great...",
         content: "Anjuna Beach is a popular destination in North Goa, known for its vibrant atmosphere, rocky and sandy shores, lively nightlife, and hippie culture. It is a great place for tourists and partygoers, offering water sports, beach shacks, and beautiful sunsets. Anjuna Beach is free to enter 24/7, but visiting during the day is best between 7 AM and 6:30 PM",
         author: "Safety Team",
         date: "2023-12-22",
         tags: "beach, nightlife, hippie culture, water sports",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 11,
         title: "Vagator beach ",
         image: "img/blog/vagator-beach.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "Vagator is a lively coastal area centered on Vagator Beach, known for its striking red cliffs. At neighboring Ozran (Little Vagator) Beach, Vagator Cliff is a popular...",
         content: "Vagator is a lively coastal area centered on Vagator Beach, known for its striking red cliffs. At neighboring Ozran (Little Vagator) Beach, Vagator Cliff is a popular party spot drawing hip crowds to watch the sunset from sea-view bars and clubs. Global eateries, casual beach shacks, and trendy cafes along the coast serve experimental cuisine, while low-key backpacker haunts and upscale resorts cluster inland.",
         author: "Green Team",
         date: "2023-12-20",
         tags: "beach, cliffs, sunset, nightlife",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 12,
         title: "Morjim Beach",
         image: "img/blog/Morjim -Beach.webp",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "Know About Morjim and Why Choose MorjimMorjim Beach is a tranquil beach in North Goa known for its pristine white sand, relaxed atmosphere, and as a nesting...",
         content: "Know About Morjim and Why Choose MorjimMorjim Beach is a tranquil beach in North Goa known for its pristine white sand, relaxed atmosphere, and as a nesting ground for the endangered Olive Ridley turtles. It's a popular destination for water sports like kite-surfing, yoga, and for enjoying fresh seafood at local beach shacks. Due to its popularity with Russian tourists, it's also known as 'Little Russia'.",
         author: "Family Expert",
         date: "2023-12-18",
         tags: "beach, turtles, water sports, tranquility",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 13,
         title: "Arambol Beach",
         image: "img/blog/Arambol-beach.webp",
-        category: "Car Guides",
+        category: "North Goa",
         excerpt: "Arambol Beach is a vibrant, bohemian beach in North Goa, India, known for its soft golden sands, calm waters, and a unique blend of relaxation, adventure, and culture...",
         content: "Arambol Beach is a vibrant, bohemian beach in North Goa, India, known for its soft golden sands, calm waters, and a unique blend of relaxation, adventure, and culture. It is famous for its laid-back vibe, with activities like yoga sessions, drum circles at sunset, paragliding, and dolphin watching. The beach features a sweet water lake, a local market, various shacks, and live music, offering a lively but informal atmosphere for tourists",
         author: "Summer Team",
         date: "2023-12-15",
         tags: "beach, bohemian, yoga, adventure",
-        filter: "guides"
+        filter: "north-goa"
     },
     {
         id: 14,
         title: "Ashwem Beach",
         image: "img/blog/Ashwen-beach.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "Ashwem Beach is a peaceful and clean beach in North Goa, known for its white sand, gentle waves, and relaxed atmosphere, making it a popular spot for those seeking a...",
         content: "Ashwem Beach is a peaceful and clean beach in North Goa, known for its white sand, gentle waves, and relaxed atmosphere, making it a popular spot for those seeking a quieter experience. It features numerous beach shacks and restaurants, and while some sources mention water sports, others highlight its tranquil vibe as ideal for a relaxing day. The beach is located north of Morjim beach, near the Chapora river, and is about 30km from Panaji",
         author: "Digital Team",
         date: "2023-12-12",
         tags: "beach, peaceful, relaxation, shacks",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 15,
         title: "Keri Beach",
         image: "img/blog/keri-beach.jpg",
-        category: "Travel Tips",
+        category: "North Goa",
         excerpt: "Querim Beach is the sandy coastline of the Querim village of Pernem, Goa. It is the largest and northernmost beach in Goa. The beach comprises a long stretch of sand...",
         content: "Querim Beach is the sandy coastline of the Querim village of Pernem, Goa. It is the largest and northernmost beach in Goa. The beach comprises a long stretch of sand with a few rocky outcrops, rows of trees, and a river inlet of Tiracol River. It is north of the Arambol beach, but in order to reach there by foot, one has to walk through the hill and jungle between the Paliem Sweet Water Lake and Querim Beach.",
         author: "Winter Expert",
         date: "2023-12-10",
         tags: "beach, quiet, scenic, relaxation",
-        filter: "tips"
+        filter: "north-goa"
     },
     {
         id: 16,
         title: "Palolem Beach",
         image: "img/blog/palolem-beach.webp",
-        category: "Car Guides",
+        category: "South Goa",
         excerpt: "Palolem Beach is a crescent-shaped beach located in South Goa, India, known for its calm, clear waters, lively atmosphere with colorful shacks, and unique nightlife...",
         content: "Palolem Beach is a crescent-shaped beach located in South Goa, India, known for its calm, clear waters, lively atmosphere with colorful shacks, and unique nightlife including 'silent discos'. It is a popular tourist destination, especially during the winter months (November to March), offering opportunities for swimming, kayaking, yoga, and exploring nearby attractions like Butterfly Beach. The beach provides a relaxed yet vibrant Goan experience, with many shops, international cuisine restaurants, and options for beachfront dining",
         author: "Business Team",
         date: "2023-12-08",
         tags: "beach, nightlife, kayaking, relaxation",
-        filter: "guides"
+        filter: "south-goa"
     },
     {
         id: 17,
         title: "Betalbatim Beach",
         image: "img/blog/betalbatim-beach.webp",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Visitors say this beach offers white sand, clean shores, and crystal-clear waters, perfect for relaxation and long walks. They also highlight the peaceful and serene...",
         content: "Visitors say this beach offers white sand, clean shores, and crystal-clear waters, perfect for relaxation and long walks. They also highlight the peaceful and serene atmosphere, with fewer crowds compared to other popular beaches, making it ideal for families and couples seeking tranquility",
         author: "Market Analyst",
         date: "2023-12-05",
         tags: "beach, family, couples, relaxation",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 18,
         title: "Shree Shantadurga Temple",
         image: "img/blog/Shree-Shantadurga-Temple.webp",
-        category: "Travel Tips",
+        category: "South Goa",
         excerpt: "Situated 33 kms from Panajim, Shree Shantadurga temple has an impressive idol of Goddess Shree Durga who mediated between Shree Vishnu and Shree Shiva and...",
         content: "Situated 33 kms from Panajim, Shree Shantadurga temple has an impressive idol of Goddess Shree Durga who mediated between Shree Vishnu and Shree Shiva and stopped the fiercefull war going on between the two. She is flanked by Vishnu and Shiva on both the sides.<br> The temples of Shree Shantadurga and Shree Mangesh, two of the most revered patron deities of the Hindu Goud Saraswat Brahmin community are located in Kavlem and Mangeshi respectively in the Ponda district of North Goa. This avatar of Shree Jagdamba devi which had come to make peace [Shanti] between Shree Vishnu and Shree Shiva, came to be known as Shree Shantadurga devi",
         author: "Airport Expert",
         date: "2023-12-03",
         tags: "emple, hindu, goddess, pilgrimage",
-        filter: "tips"
+        filter: "south-goa"
     },
     {
         id: 19,
         title: "Shri Mahadeva Temple, Tambdisurla",
         image: "img/blog/shri-mahadev-temple.webp",
-        category: "Car Guides",
+        category: "South Goa",
         excerpt: "Mahadeva Temple, Tambdi Surla is a 13th-century Hindu temple in the Kadamba style dedicated to Lord Shiva, one of the main deities in Hinduism, and is an active place...",
         content: "Mahadeva Temple, Tambdi Surla is a 13th-century Hindu temple in the Kadamba style dedicated to Lord Shiva, one of the main deities in Hinduism, and is an active place of Hindu worship. It is an ASI protected Monument of National Importance in Goa. The temple is dedicated to Lord Shiva and is reminiscent of the temples at Aihole in neighbouring Karnataka.",
         author: "Eco Expert",
         date: "2023-12-01",
         tags: "temple, hindu, heritage, architecture",
-        filter: "guides"
+        filter: "south-goa"
     },
     {
         id: 20,
         title: "Mangueshi Temple",
         image: "img/blog/shri-mangushi-temple.webp",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Shri Manguesh temple is Hindu temple, located at Mangeshi Village in Priol, Ponda taluk, Goa.It is at a distance of 1 km from Mardol close to Nagueshi, 21 km from Panaji...",
         content: "Shri Manguesh temple is Hindu temple, located at Mangeshi Village in Priol, Ponda taluk, Goa.It is at a distance of 1 km from Mardol close to Nagueshi, 21 km from Panaji the capital of Goa and 26 km from Margao. Shree Mangueshi is the Kuldeva (family deity) of Saraswat Brahmins and other gotras. Shrimad Swamiji of Shri Kavale Math is Spiritual chief Of Shri Manguesh Saunsthan, Mangueshi. This temple is one of the largest and most frequently visited temples in Goa.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "temple, hindu, pilgrimage, heritage",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 21,
         title: "Kamakshi Temple, Shiroda",
         image: "img/blog/shri-kamakshi-temple.webp",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "The temple of Shri Kamakshi is located amidst the hills of the picturesque village of Shiroda and was built in the late 16th century. In the village of Shiroda. A huge...",
         content: "The temple of Shri Kamakshi is located amidst the hills of the picturesque village of Shiroda and was built in the late 16th century. In the village of Shiroda. A huge Mahadwar or temple gate leads to the Kamakshi temple complex known as 'Sthal' or more commonly called 'Thal'. After passing under the Mahadwar,  one descends the flight of stairs. The temple, crowned by an octagonal, two-storied tower, with a golden Kalash perched on its Shikhar or peak, can be seen prominently. The temple of Shri Kamakshi has a large Sabha Mandap or the traditional open entrance hall. In front of the temple, one can see a tall Deepasthambh or the lamp tower and a holy water tank. The square shaped chowk, Gan is used for conducting the Prasad ritual.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "temple, hindu, heritage, architecture",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 22,
         title: "Shri Nageshi Temple",
         image: "img/blog/shri-nageshi-temple.webp",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Nagueshi or Nagesh is a form of the Hindu god Shiva worshipped by Konkani Hindus of the Gaud Saraswat Brahmin community in India. The temple lies in verdant...",
         content: "Nagueshi or Nagesh is a form of the Hindu god Shiva worshipped by Konkani Hindus of the Gaud Saraswat Brahmin community in India. The temple lies in verdant surroundings in the Ponda district of Goa. Unlike many other Hindu temples of Goa which were shifted out of the Velha Conquistas the Nagueshi Temple is at its original place. It has, however, been renovated a number of times. It is located in Bandode village, Ponda, North Goa district",
         author: "Service Team",
         date: "2023-11-28",
         tags: "temple, hindu, heritage, nature",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 23,
         title: "Basilica of Bom Jesus",
         image: "img/blog/Basilica-of-Bom-Jesus.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "Basilica of Bom Jesus, Roman Catholic church in the abandoned city of Old Goa, Goa state, India. Built between 1594 and 1605, it is regarded as an outstanding example of...",
         content: "Basilica of Bom Jesus, Roman Catholic church in the abandoned city of Old Goa, Goa state, India. Built between 1594 and 1605, it is regarded as an outstanding example of Renaissance Baroque and Portuguese colonial architecture. The basilica is also known for housing the remains of the missionary St. Francis Xavier, who was based in Goa in 1541–49.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "church, heritage, architecture, history",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 24,
         title: "Our Lady of the Immaculate Conception Church",
         image: "img/blog/church-of-our-lady-of-immaculate-conception.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "The colonial Portuguese Baroque style church was first built in 1541 as a chapel on a hill side overlooking the city of Panjim. It was eventually replaced by a larger church...",
         content: "The colonial Portuguese Baroque style church was first built in 1541 as a chapel on a hill side overlooking the city of Panjim. It was eventually replaced by a larger church in the 1600s as part of Portuguese Goa's religious expansion. This church houses the ancient bell that was removed from the Augustinian ruins of the Church of Our Lady of Grace (Portuguese: Nossa Senhora da Graça) in the once famed city of Old Goa. This bell is considered to be the second largest of its kind in Goa, surpassed only by the Golden Bell which resides in the Sé Cathedral in Old Goa",
         author: "Service Team",
         date: "2023-11-28",
         tags: "church, heritage, portuguese, architecture",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 25,
         title: "Corjuem Fort",
         image: "img/blog/Corjuem-Fort.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "Fort Assunção or Corjuem Fort is a fortress situated 4 kilometres (2.5 mi) from the village of Aldona on the river island of Corjuem, Goa. It was a military fortress for the...",
         content: "Fort Assunção or Corjuem Fort is a fortress situated 4 kilometres (2.5 mi) from the village of Aldona on the river island of Corjuem, Goa. It was a military fortress for the defense of Portuguese India. It is smaller than the other forts in Goa, but it gives a good view of the surrounding river and land. It is a protected monument under the Goa, Daman and Diu Ancient Monuments and Archaeological Sites and Remains Act. Corjuem Fort is 12 kilometres (7.5 mi) from Panjim.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "fort, history, heritage, architecture",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 26,
@@ -1138,205 +1142,205 @@ const blogPosts = [
         id: 31,
         title: "Colva Beach",
         image: "img/blog/colva-beach.jpeg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Colva (Portuguese: Colvá) is a coastal village situated in the Salcete taluka, in South Goa district, of Goa state on the west coast of the Indian subcontinent. Colva...",
         content: "Colva (Portuguese: Colvá) is a coastal village situated in the Salcete taluka, in South Goa district, of Goa state on the west coast of the Indian subcontinent. Colva Beach (Portuguese: Praia de Colvá) spans about 2.5 km (1.6 mi) along a sandy coastline of approximately 25 km (16 mi) extending from Bogmalo in the north to Cabo de Rama in the south. The village had significant importance to the Portuguese, local (Gancars) noble chardó (Kshatriya) Feudal Lords and was the retreat for Goa's high, elite and aristocratic society, who would come to Colvá for their mudança (change of air), to enjoy the private beach of the then Roiz family. Today the Portuguese area is dotted with the past elite houses and modern villas, including many ruins from more than 300 years. On weekends, huge crowds of tourists, visitors from around the world as well as local Indians, enjoy the sunset and various activities. The beach is particularly busy in October, when hordes of religious pilgrims come and visit Colvá Church, called Igreja de Nossa Senhora das Mercês (Church of Our Lady of Mercy), that was founded in AD 1630 by the Roiz family and the crown of the statue of our Lady has their family initials. The church was later modified in the eighteenth century which is located at the village square. The 1630 church construction was funded by the Roiz family, the Jesuits and the Gancars of Colluá.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "beach, heritage, church, nightlife",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 32,
         title: "Miramar Beach",
         image: "img/blog/miramar-beach.webp",
-        category: "Industry News",
+        category: "North Goa",
         excerpt: "Miramar is the beach area of the Goan capital of Panjim, also known as Panaji and is one of the most visited beaches of Goa. It is one of the two only beaches in Panjim...",
         content: "Miramar is the beach area of the Goan capital of Panjim, also known as Panaji and is one of the most visited beaches of Goa. It is one of the two only beaches in Panjim, other being Caranzalem beach. Many people, mostly tourists, come to this beach every day. Miramar Beach was the venue for Beach Volleyball events of the 2014 Lusofonia Games. Originally named Porta de Gaspar Dias by the Portuguese, the name was then changed to Miramar. Situated at the confluence of the Mandovi River and the Arabian Sea, it is a small beach that occasionally hosts some events. There are several educational institutions in the surrounding vicinity, including Dhempe College of Arts and Science, V. M. Salgaonkar College of Law and Sharada Mandir High School. Clube Gaspar de Dias and a popular café are nearby.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "beach, panjim, city, leisure",
-        filter: "news"
+        filter: "north-goa"
     },
     {
         id: 33,
         title: "Cola Beach",
         image: "img/blog/cola-beach.jpg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Cola Beach in Goa is a serene and less-crowded coastal spot ideal for visitors seeking a peaceful beach experience. It offers a quiet atmosphere with scenic views, making...",
         content: "Cola Beach in Goa is a serene and less-crowded coastal spot ideal for visitors seeking a peaceful beach experience. It offers a quiet atmosphere with scenic views, making it suitable for relaxation and casual strolls. The area is appreciated for its natural beauty and tranquil environment, particularly outside peak tourist hours. While facilities are limited, its unspoiled charm is a key draw. There are no major cons reported, though its remote feel may not suit those looking for lively beachside activities or extensive amenities.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "beach, hidden gem, relaxation, nature",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 34,
         title: "Cotigao Wildlife Sanctuary",
         image: "img/blog/cotigao-sanctuary.jpg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "The Cotigao Wildlife Sanctuary is located in Canacona Taluka, South Goa district, of Goa, India, established in 1968. There is an eco-tourism complex at the entrance of...",
         content: "The Cotigao Wildlife Sanctuary is located in Canacona Taluka, South Goa district, of Goa, India, established in 1968. There is an eco-tourism complex at the entrance of the sanctuary that houses a nature interpretation centre, cottages, toilets, library, reception area, rescue centre, canteen, children's park, and forest ranger office. The sanctuary is known for its dense forest of tall trees, some of which reach 30 metres in height. The forest supports moist deciduous trees, semi-evergreen trees, and evergreen trees. A special feature of the sanctuary is a treetop watchtower positioned 25 metres above a watering hole where animals go to drink. The best times to visit the watchtower are dawn and dusk when animals are most likely to be visiting. Animals in the sanctuary include the flying squirrel, slender loris, Indian pangolin, mouse deer, four-horned antelope, Malabar pit viper, hump-nosed pit viper, white-bellied woodpecker, Malabar trogon, velvet-fronted nuthatch, heart-spotted woodpecker, speckled piculet, Malayan bittern, draco or flying lizard, golden-back gliding snake, and Malabar tree toad. Eight nature trails traverse the sanctuary, ranging from 500 metres to 5 kilometres long. Several tribal groups live in and around the sanctuary including the Velip and the Kunbil. Visitors can interact with these communities to learn about their culture and lifestyle.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "wildlife sanctuary, nature, trekking, forest",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 35,
         title: "Netravali Wildlife Sanctuary",
         image: "img/blog/netravali-waterfall.jpg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Netravali Wildlife Sanctuary is located in South-Eastern Goa, India.[2] It constitutes one of the vital corridors of the Western Ghats and covers an area of about 211km2...",
         content: "Netravali Wildlife Sanctuary is located in South-Eastern Goa, India.[2] It constitutes one of the vital corridors of the Western Ghats and covers an area of about 211km2. Netravali or Neturli is an important tributary of River Zuari, which originates in the sanctuary. Forests mostly consist of moist deciduous vegetation interspersed with evergreen and semi-evergreen habitat; there are also two all-season waterfalls in the sanctuary. There are two waterfalls located in Netravali, those being Savari and Mainapi.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "wildlife sanctuary, waterfalls, nature, trekking",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 36,
         title: "Siridao Beach (shell beach)",
         image: "img/blog/shell-beach.jpeg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Beach contains coarse sand and rocks and, is found at the mouth of Zuari river. Along the beach one can also find boats that are used by the local fishing community...",
         content: "Beach contains coarse sand and rocks and, is found at the mouth of Zuari river. Along the beach one can also find boats that are used by the local fishing community. The beach is a haven for shell collectors and one can easily find myriad types of shells here. It is located 7 km from the center of Panaji.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "beach, shells, fishing, photography",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 37,
         title: "Salavali Dam",
         image: "img/blog/salaulim-dam.jpg",
-        category: "Industry News",
+        category: "South Goa",
         excerpt: "Salavali Dam (Salaulim Dam), which is pronounced local Salauli Dam Says, India K Goa Of the state South Goa district K Sangem One located near the city Dam Is. It is...",
         content: "Salavali Dam (Salaulim Dam), which is pronounced local Salauli Dam Says, India K Goa Of the state South Goa district K Sangem One located near the city Dam Is. It is situated on the Salavali River, which Zuwari River Of one Tributary Is",
         author: "Service Team",
         date: "2023-11-28",
         tags: "dam, nature, river, sightseeing",
-        filter: "news"
+        filter: "south-goa"
     },
     {
         id: 38,
         title: "Dodol",
         image: "img/blog/dodol.jpg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Dodol is a traditional Goan sweet known for its dark brownish color, firm, jelly-like texture, and rich, melt-in-the-mouth consistency. It is a cherished dessert, especially...",
         content: "Dodol is a traditional Goan sweet known for its dark brownish color, firm, jelly-like texture, and rich, melt-in-the-mouth consistency. It is a cherished dessert, especially during Christmas, and holds cultural significance in Goa, often prepared using time-honored methods passed down through generations. The sweet is made from a harmonious blend of rice flour, coconut milk, and black palm jaggery, with additional ingredients like cashew nuts and cardamom enhancing its flavor. The preparation involves slow-cooking the mixture in a copper vessel while stirring continuously to prevent burning, a process that can take over an hour. It is believed to have origins during the Portuguese colonial period and is also popular in other regions with historical Portuguese influence, including parts of Southeast Asia and Sri Lanka.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "dessert, goan sweets, christmas, traditional food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 39,
         title: "Sanna",
         image: "img/blog/sanna.jpg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Sanna is a traditional Goan steamed rice cake, often enjoyed as a soft, spongy snack or accompaniment to spicy curries. The sweet version, known as Godd Sanna or Chunachi...",
         content: "Sanna is a traditional Goan steamed rice cake, often enjoyed as a soft, spongy snack or accompaniment to spicy curries. The sweet version, known as Godd Sanna or Chunachi Sanna, features a filling of coconut and jaggery, making it a popular tea-time treat. This recipe uses fermented batter made from rice and coconut, with the sweet variant incorporating jaggery and cardamom for a rich, aromatic flavor.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "goan cuisine, steamed rice cake, snack, traditional food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 40,
         title: "Bebinca",
         image: "img/blog/bebinca.jpg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Bebinca is a traditional, multi-layered Goan dessert renowned as the 'Queen of Goan Sweets' and a symbol of Goa's Indo-Portuguese culinary heritage. It is a rich, golden-brown...",
         content: "Bebinca is a traditional, multi-layered Goan dessert renowned as the 'Queen of Goan Sweets' and a symbol of Goa's Indo-Portuguese culinary heritage. It is a rich, golden-brown, custard-like cake made with egg yolks, coconut milk, sugar, flour, and ghee, often flavored with nutmeg or cardamom, and baked layer by layer over several hours. The dessert is a staple during Christmas, Easter, weddings, and other festive occasions in Goa, and its popularity extends to the Indian diaspora. In 2023, bebinca was granted a Geographical Indication (GI) tag, recognizing it as a unique and authentic product of Goa",
         author: "Service Team",
         date: "2023-11-28",
         tags: "dessert, goan sweets, bebinca, festive food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 41,
         title: "Poee",
         image: "img/blog/bread.jpeg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Poee or poie is a leavened bread baked by the traditional bakers called paders in Goa, India, where it is a staple food. It has characteristics similar to a pita bread, notably...",
         content: "Poee or poie is a leavened bread baked by the traditional bakers called paders in Goa, India, where it is a staple food. It has characteristics similar to a pita bread, notably that it is round, soft, and has a pocket. Coconut palm wine or toddy was traditionally used for the fermenting process but yeast is now used in commercial production. The bread is made from half-maida and half-whole wheat flour. Bread is a significant part of Goan cuisine, introduced by the Portuguese in the early 17th century. According to Chef Hussain Shahzad, Goa is the only state in India with traditional leavened breads. According to Vogue India, in 2018 poee was becoming increasingly popular outside of Goa. Ross poee, a dish of an omelet, xacuti and poee, is a typical item of Goan home cooking. Poee traditionally was prepared by fermenting it with toddy for two days, rolling it into a ball, flattening it, and baking it on the floor of a wood-fired oven. This differentiates it from pao, which uses the same dough but is baked in a pan. Baking time is two minutes; in professional bakeries, poee is generally baked before pao because it requires hotter temperatures",
         author: "Service Team",
         date: "2023-11-28",
         tags: "bread, goan cuisine, traditional food, bakery",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 42,
         title: "Sol-kadhi",
         image: "img/blog/sol-kadhi.jpg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Goan Sol-kadhi, also known as Solkadi or Kokum Curry, is a traditional, cooling, and digestive beverage from the Goan and Konkan coastal regions of India, renowned for its tart...",
         content: "Goan Sol-kadhi, also known as Solkadi or Kokum Curry, is a traditional, cooling, and digestive beverage from the Goan and Konkan coastal regions of India, renowned for its tart, mauve-hued flavor and ability to balance spicy meals. It is commonly served at the end of a meal, especially with fish or vegetarian thalis, and is a staple during hot summers.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "drink, kokum, cooling beverage, goan cuisine",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 43,
         title: "Seafood",
         image: "img/blog/seafood.avif",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Goan seafood cuisine is renowned for its rich, spicy, and tangy flavors, deeply influenced by centuries of Portuguese rule and the region's Konkani roots. The cuisine is predominantly...",
         content: "Goan seafood cuisine is renowned for its rich, spicy, and tangy flavors, deeply influenced by centuries of Portuguese rule and the region's Konkani roots. The cuisine is predominantly seafood-based, with staple ingredients including rice, fish, coconut, and a variety of local spices. Kingfish, pomfret, shark, tuna, sardines, mackerel, crabs, prawns, tiger prawns, lobster, squid, and mussels are commonly used. The use of kokum and vinegar, particularly toddy vinegar made from fermented coconut sap, is a defining characteristic of Goan cooking. Popular Goan seafood dishes include Squid Masala Fry, where soft squids are stir-fried with a spicy red Goan recheado masala. Prawn Balchao is a spicy, tangy dish made with prawns pickled in a tomato-vinegar sauce infused with tamarind and local chillies, often enjoyed as a side or pickle. Fish Recheado involves stuffing mackerel or pomfret with a spicy recheado masala, coating it with semolina, and pan-frying until crisp. Crab Xacuti is a flavorful coconut-based curry made with crab meat, white poppy seeds, dried chilies, and a blend of spices like nutmeg, cinnamon, and cloves, offering a rich, aromatic taste. Mussel Rawa Fry features mussels coated in a spiced semolina (rawa) batter and shallow-fried to golden crispness, prized for its tender interior and crunchy exterior. Other notable dishes include Goan Fish Curry, a foundational meal often served with rice or local bread, and Shark Ambot Tik, a red sour and spicy curry flavored with red chillies and kokum. Malvani Fish Fry, a dish from the neighboring Malvani region, features fish marinated in a spicy masala and fried to perfection, offering a crispy exterior and tender interior. In Pune, restaurants like Cafe Goa and Goenche offer authentic Goan seafood experiences, serving dishes such as Pomfret Masala Fry, Crab Sukka, and Prawn Curry, reflecting the popularity of Goan cuisine beyond Goa",
         author: "Service Team",
         date: "2023-11-28",
         tags: "seafood, goan cuisine, fish, traditional food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 44,
         title: "Chicken Cafreal",
         image: "img/blog/chicken-cafreal.jpg",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Goan Chicken Cafreal is a traditional Goan dish with Portuguese and African influences, originating from the Portuguese colonies in Africa and introduced to Goa during the colonial...",
         content: "Goan Chicken Cafreal is a traditional Goan dish with Portuguese and African influences, originating from the Portuguese colonies in Africa and introduced to Goa during the colonial period. It is a rustic chicken curry made with a distinctive green masala paste, known for its aromatic, smoky, and fresh flavors, typically served with bread, potatoes, or rice",
         author: "Service Team",
         date: "2023-11-28",
         tags: "chicken, goan cuisine, spicy, traditional food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 45,
         title: "Prawn Balchao",
         image: "img/blog/prawn-balchao.webp",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Goan Prawn Balchao is a fiery, tangy, and sweet pickle-style dish originating from the coastal state of Goa in India, traditionally made with prawns, dried chilies, and a blend of...",
         content: "Goan Prawn Balchao is a fiery, tangy, and sweet pickle-style dish originating from the coastal state of Goa in India, traditionally made with prawns, dried chilies, and a blend of spices, often served as a condiment with rice or bread. It is known for its complex flavor profile and long shelf life when properly prepared and stored.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "prawns, goan cuisine, spicy, pickle",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 46,
         title: "Chicken Xacuti",
         image: "img/blog/chicken-xacuti.webp",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "Goan Chicken Xacuti is a rich, aromatic curry from the coastal region of Goa, India, known for its complex blend of spices and fresh coconut, creating a fiery yet balanced flavor profile...",
         content: "Goan Chicken Xacuti is a rich, aromatic curry from the coastal region of Goa, India, known for its complex blend of spices and fresh coconut, creating a fiery yet balanced flavor profile. It is traditionally made with chicken marinated in a green masala and cooked in a thick, fragrant coconut-based sauce.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "chicken, curry, goan cuisine, spicy",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     },
     {
         id: 47,
         title: "Fish Thali",
         image: "img/blog/fish-thali.avif",
-        category: "Goan Tradition",
+        category: "Goan Tradition Food",
         excerpt: "The Goan Fish Thali is a quintessential meal in Goa, representing the region's coastal culinary heritage with a harmonious blend of seafood, spices, coconut, and tangy-sour notes unique...",
         content: "The Goan Fish Thali is a quintessential meal in Goa, representing the region's coastal culinary heritage with a harmonious blend of seafood, spices, coconut, and tangy-sour notes unique to Goan cuisine. It is typically served on a single platter, featuring a variety of small dishes that offer a well-rounded experience of the region's flavors. The centerpiece of the thali is the rawa (semolina) fried fish, often made with kingfish, chonak (sea bass), modso (rock cod), or bangda (Indian mackerel), which is coated in a crispy layer and fried to golden perfection, providing a contrast between the crunchy exterior and the moist, tender fish inside. This is accompanied by a generous serving of steamed rice, which acts as a canvas for the bold curries, and a crisp papad for added texture. The thali includes several key components: a fish curry, often made with tamarind for a signature tartness and enriched with coconut milk, spices like turmeric, cumin, and red chili powder, and sometimes featuring prawns or crab; prawn curry, a creamy dish made with fresh prawns and coconut milk, offering a mild spiciness with a hint of tamarind; fish Ambot Tik, a tangy and spicy curry made with vinegar and red chilies, known for its bold, sour heat; prawn kismoor, a dry dish made with dried prawns, grated coconut, onions, and spices, delivering an umami punch; clam tisriyo sukha, a dry clam preparation cooked with grated coconut and curry leaves, offering an earthy, slightly sweet flavor; crab xacutti, a rich, deeply spiced curry made with roasted coconut and aromatic spices, where the crab meat absorbs the complex flavors; chana sabzi, a comforting chickpea dish with a mild, earthy taste that balances the stronger seafood flavors; and sol kadhi, a cooling pink-hued drink made from coconut milk and kokum, which helps cleanse the palate and aids digestion. The meal is often completed with a small bowl of kheer, a creamy vermicelli pudding flavored with cardamom, providing a sweet and smooth finish. The Goan Fish Thali is more than just a meal; it is considered a journey through the essence of Goa, capturing the flavors of the sea, the spice of the land, and the soul of the region. +For those seeking an authentic experience, several restaurants are renowned for their fish thalis. Vinayak Family Restaurant in Assagao is known for its prawns rawa fry thali and butter garlic squid, with prices ranging from INR 300 to 450. Ritz Classic in Panjim is famous for its generous portions, featuring a giant slice of fried surmai (kingfish), rich prawn curry, tisrya masala (spiced clams), sukka sungta kismoor (dried shrimp salad), and a spicy lentil gravy, with a thali priced around INR 350. Kuttikar Bar and Restaurant in Ribandar offers a chonak thali with a boneless sea bass fillet, rich fish curry, crab gravy, and stir-fried French beans, priced at approximately INR 270. Kokni Kanteen in Panjim, a family-run restaurant since 1972, is celebrated for its traditional Goan meals and is a popular spot for locals and tourists alike. Additionally, Fat Fish in Calangute serves a Special Goan Fish Thali for INR 200, featuring two fish curries, a large rawa-coated kingfish, crab masala, mussels curry, and vegetables, available only between 1–3 pm.",
         author: "Service Team",
         date: "2023-11-28",
         tags: "fish thali, seafood, goan cuisine, traditional food",
-        filter: "goan-tradition"
+        filter: "goan-tradition-food"
     }
 ];
 

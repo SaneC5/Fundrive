@@ -23,7 +23,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--primary-yellow);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +45,11 @@ body{
     height: 100vh;
     object-fit: cover;
     z-index: 1;
+}
+@media (max-width: 500px) {
+    .loader-gif {
+        object-fit:contain;
+    }
 }
 
 .loader-text {
@@ -109,7 +114,7 @@ body{
 }
 
 .btn-call {
-    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+    background: #0000dd;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -119,6 +124,7 @@ body{
 }
 
 .btn-call:hover {
+    background: #0000dd;
     transform: skewX(-25deg) translateY(-3px);
     color: white;
 }
@@ -379,7 +385,7 @@ body{
 
 .btn-book{
     color: var(--secondary-yellow);
-    background: var(--secondary-blue);
+    background: #0000dd;
 }
 
 .btn-book2{
@@ -567,7 +573,7 @@ body{
 }
 
 .footer-links a:hover {
-    color: var(--primary-blue);
+    color: var(--secondary-blue);
 }
 
 .social-links {
@@ -575,6 +581,7 @@ body{
 }
 .social-links i{
     color: var(--primary-yellow);
+    font-size: 20px;
 }
 
 .social-links a {
@@ -584,7 +591,7 @@ body{
     background: var(--secondary-blue);
     color: white;
     text-align: center;
-    line-height: 40px;
+    line-height: 42px;
     border-radius: 50%;
     margin-right: 10px;
     transition: all 0.3s ease;
@@ -597,6 +604,13 @@ body{
 
 .footer-contact p {
     margin-bottom: 10px;
+}
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    color: var(--secondary-blue);
 }
 
 .footer-contact i {
@@ -616,7 +630,7 @@ body{
 }
 
 .footer-copyright a {
-    color: var(--primary-blue);
+    color: var(--secondary-blue);
     text-decoration: none;
 }
 
@@ -661,7 +675,7 @@ body{
     right: 30px;
     background-color: var(--secondary-yellow);
     color: var(--primary-blue);
-    border: none;
+    border: 1px solid var(--primary-blue);
     border-radius: 5px;
     padding: 16px 18px;
     font-size: 18px;
