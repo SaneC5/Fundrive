@@ -601,7 +601,7 @@ body{
     background: var(--secondary-blue);
     color: white;
     text-align: center;
-    line-height: 42px;
+    line-height: 44px;
     border-radius: 50%;
     margin-right: 10px;
     transition: all 0.3s ease;
@@ -1475,5 +1475,16 @@ html {
     
     .map-container {
         height: 300px;
+    }
+}
+
+.privacy-policy, .terms-condition{
+    background-color: #ffffff;
+    padding: 2% 10%;
+}
+@media (max-width: 576px) {
+    .privacy-policy, .terms-condition{
+        
+        padding: 2% 5%;
     }
 }
