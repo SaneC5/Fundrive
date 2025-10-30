@@ -326,12 +326,12 @@ const taxiCars = [
         ]
     },
     {
-        name: "Crysta",
-        image: "img/innova-taxi.png",
-        description: "A premium 7-seater taxi option providing luxury, space, and unmatched comfort for long-distance travel or corporate rides.",
+        name: "Baleno",
+        image: "img/baleno-taxi.jpg",
+        description: "A premium hatchback taxi offering comfort, style, and efficiency — ideal for city commutes and short-distance rides.",
         features: [
-            { type: "body", value: "SUV" },
-            { type: "seats", value: 7 },
+            { type: "body", value: "Hatchback" },
+            { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ]
     },
@@ -346,12 +346,12 @@ const taxiCars = [
         ]
     },
     {
-        name: "Baleno",
-        image: "img/baleno-taxi.jpg",
-        description: "A premium hatchback taxi offering comfort, style, and efficiency — ideal for city commutes and short-distance rides.",
+        name: "Crysta",
+        image: "img/innova-taxi.png",
+        description: "A premium 7-seater taxi option providing luxury, space, and unmatched comfort for long-distance travel or corporate rides.",
         features: [
-            { type: "body", value: "Hatchback" },
-            { type: "seats", value: 5 },
+            { type: "body", value: "SUV" },
+            { type: "seats", value: 7 },
             { type: "luggage", value: 3 }
         ]
     }
