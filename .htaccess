@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# --- 1. Redirect .html URLs to clean version (GoDaddy-safe) ---
+RewriteCond %{THE_REQUEST} "\s/([^\s]+)\.html" [NC]
+RewriteRule ^(.+)\.html$ /%1 [R=301,L]
+
+# --- 2. Internally rewrite clean URLs to .html files ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.html [L]

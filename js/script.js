@@ -11,7 +11,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 1300/day"
+        price: "₹ 1200/day"
     },
     {
         name: "Swift",
@@ -37,7 +37,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 1400/day"
+        price: "₹ 1300/day"
     },
     {
         name: "Baleno",
@@ -50,7 +50,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 1600/day"
+        price: "₹ 1500/day"
     },
     {
         name: "i20 (Old)",
@@ -89,7 +89,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 1400/day"
+        price: "₹ 1300/day"
     },
     {
         name: "i20 (New)",
@@ -128,7 +128,7 @@ const selfCars = [
             { type: "seats", value: 7 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 2200/day"
+        price: "₹ 2000/day"
     },
     {
         name: "Ertiga",
@@ -141,7 +141,7 @@ const selfCars = [
             { type: "seats", value: 7 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 2800/day"
+        price: "₹ 2500/day"
     },
     {
         name: "Kia Carens",
@@ -154,7 +154,7 @@ const selfCars = [
             { type: "seats", value: 6 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 2700/day"
+        price: "₹ 2400/day"
     },
     {
         name: "Kia Sonet",
@@ -180,7 +180,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 2800/day"
+        price: "₹ 2500/day"
     },
     {
         name: "Venue",
@@ -206,7 +206,7 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 2800/day"
+        price: "₹ 2500/day"
     },
     {
         name: "Creta",
@@ -232,7 +232,33 @@ const selfCars = [
             { type: "seats", value: 5 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 3500/day"
+        price: "₹ 3300/day"
+    },
+    {
+        name: "Fronx",
+        image: "img/fronx.png",
+        description: "A sporty crossover offering smooth performance, modern styling, and practical comfort for city and weekend drives.",
+        features: [
+            { type: "body", value: "SUV" },
+            { type: "transmission", value: "Auto" },
+            { type: "fuel", value: "Petrol" },
+            { type: "seats", value: 5 },
+            { type: "luggage", value: 3 }
+        ],
+        price: "₹ 1800/day"
+    },
+    {
+        name: "Kia Seltos",
+        image: "img/kia-seltos.png",
+        description: "A premium midsize SUV combining powerful performance, elegant interiors, advanced technology, and superior driving comfort.",
+        features: [
+            { type: "body", value: "SUV" },
+            { type: "transmission", value: "Auto" },
+            { type: "fuel", value: "Diesel" },
+            { type: "seats", value: 5 },
+            { type: "luggage", value: 3 }
+        ],
+        price: "₹ 3300/day"
     },
     {
         name: "Hycross",
@@ -245,7 +271,7 @@ const selfCars = [
             { type: "seats", value: 7 },
             { type: "luggage", value: 3 }
         ],
-        price: "₹ 3600/day"
+        price: "₹ 3500/day"
     },
     {
         name: "Crysta",
